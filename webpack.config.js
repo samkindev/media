@@ -2,9 +2,11 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
+
+
 module.exports = (_, argv) => ({
   output: {
-    publicPath: argv.mode === "developement" ? "http://localhost:8081/" : "https://chat-media.vercel.app/",
+    publicPath: argv.mode === "development" ? "http://localhost:8081/" : "https://chat-media.vercel.app/",
   },
 
   resolve: {
