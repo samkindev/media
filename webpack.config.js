@@ -6,7 +6,7 @@ const deps = require("./package.json").dependencies;
 
 module.exports = (_, argv) => ({
   output: {
-    publicPath: argv.mode === "development" ? "http://localhost:8081/" : "https://chat-media.vercel.app/",
+    publicPath: argv.mode === "development" ? "http://localhost:8081/" : "https://chat-media.netlify.app/",
   },
 
   resolve: {
