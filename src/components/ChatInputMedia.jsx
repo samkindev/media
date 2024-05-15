@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.scss";
 
-const ChatInputMedia = () => {
+export const ChatInputMedia = () => {
   return (
     <div className="flex items-center gap-1">
       <button type="button" className="flex items-center pe-3">
@@ -40,5 +40,3 @@ const ChatInputMedia = () => {
     </div>
   );
 };
-
-export default ChatInputMedia;
